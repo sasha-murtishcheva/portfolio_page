@@ -1,0 +1,332 @@
+.u-margin-bottom-small {
+  margin-bottom: 3rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 6rem;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8.5rem;
+}
+
+.u-margin-top-small {
+  margin-top: 3rem;
+}
+
+.u-margin-top-medium {
+  margin-top: 6rem;
+}
+
+.u-margin-top-big {
+  margin-top: 8.5rem;
+}
+
+.u-float-right {
+  float: right;
+}
+
+.u-padding-right {
+  padding-right: 0 !important;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+/* Set up Roboto for old browsers, only regular + bold */
+@supports not (font-variation-settings: normal) {
+  @font-face {
+    font-family: "Space Grotesk";
+    src: url("../css/fonts/static/SpaceGrotesk-Medium.ttf") format("ttf");
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "Space Grotesk";
+    src: url("../css/fonts/static/SpaceGrotesk-Bold.ttf") format("ttf");
+    font-weight: bold;
+  }
+}
+/* Set up Roboto for modern browsers, all weights */
+@supports (font-variation-settings: normal) {
+  @font-face {
+    font-family: "Space Grotesk";
+    src: url("../css/fonts/SpaceGrotesk-VariableFont_wght.ttf") format("ttf supports variations"), url("../css/fonts/SpaceGrotesk-VariableFont_wght.ttf") format("ttf-variations");
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+  }
+}
+body {
+  font-family: "Space Grotesk", serif;
+  font-weight: 400;
+  background-color: #151515;
+  color: #ffffff;
+}
+
+.heading {
+  font-weight: 700;
+}
+.heading--level-1 {
+  font-size: 8.8rem;
+  line-height: 8.8rem;
+  letter-spacing: -0.4rem;
+}
+.heading--level-2 {
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+  letter-spacing: -1.5px;
+}
+.heading--level-3 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+.heading--logo {
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+.underline-decor {
+  background-image: linear-gradient(#4ee1a0 100%, #4ee1a0 100%);
+  background-repeat: repeat-x;
+  background-position: 0 95%;
+  background-size: 100% 7px;
+}
+
+.logo:link,
+.logo:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.btn, .btn:link, .btn:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.3rem;
+  padding: 1.3rem 0;
+  border-bottom: 2px solid #4ee1a0;
+  transition: all 0.3s;
+}
+.btn:hover, .btn:link:hover, .btn:visited:hover {
+  color: #4ee1a0;
+}
+
+.circles {
+  position: absolute;
+}
+.circles--picture {
+  bottom: 7rem;
+  left: -6.5rem;
+}
+.circles--left-top {
+  top: 0;
+  left: -28.5rem;
+}
+.circles--right {
+  bottom: 2rem;
+  right: -17.5rem;
+}
+.circles--right > img {
+  object-position: 20rem;
+}
+.circles--left-bottom {
+  top: 32rem;
+  left: -25rem;
+}
+
+.form {
+  width: 40%;
+}
+.form__txt-field {
+  position: relative;
+  font-family: "Space Grotesk", serif;
+  border-bottom: 2px solid #d9d9d9;
+  margin: 3rem 0;
+}
+.form__txt-field-item {
+  width: 100%;
+  padding: 2.5rem;
+  font-size: 1.8rem;
+  height: 4rem;
+  color: #ffffff;
+  border: none;
+  background: none;
+  outline: none;
+}
+.form__txt-field-item:focus ~ label, .form__txt-field-item:valid ~ label {
+  display: none;
+}
+.form__txt-field-item:focus ~ span::before, .form__txt-field-item:valid ~ label::before {
+  width: 100%;
+}
+.form__txt-field-label {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  top: 30%;
+  left: 2.5rem;
+  color: #d9d9d9;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: all 0.5s;
+}
+.form__txt-field-span::before {
+  content: "";
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #4ee1a0;
+  transition: 0.2s;
+}
+
+.message {
+  height: 10rem;
+}
+.message > label {
+  top: 20%;
+}
+.message > span[class*=span]::before {
+  top: 9.8rem;
+}
+
+.social-media-list {
+  display: flex;
+}
+.social-media-list-item {
+  list-style: none;
+  transform: scale(1.2);
+  padding-right: 3rem;
+}
+
+.footer {
+  position: relative;
+  padding: 0 17.5rem;
+  background-color: #242424;
+}
+.footer__content-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem 0;
+}
+.footer__content-box-info {
+  max-width: 45rem;
+}
+.footer__contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 0 7rem;
+}
+.footer__logo:link, .footer__logo:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  padding: 0 17.5rem;
+  min-height: 10rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.introduction__picture {
+  width: 44.5rem;
+  height: 72rem;
+  background-image: url("../images/image-profile-desktop.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  margin-top: -10.2rem;
+}
+.introduction__content {
+  max-width: 70rem;
+  padding-top: 7rem;
+}
+.introduction__content > *:not(:first-child) {
+  width: 60%;
+}
+
+.projects {
+  text-transform: uppercase;
+}
+.projects__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.projects__box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects__item {
+  max-width: 52rem;
+  padding-bottom: 6rem;
+}
+.projects__item-heading {
+  padding: 1rem 0;
+}
+.projects__item:not(even) {
+  margin-left: 2rem;
+}
+.projects__item > img {
+  width: 100%;
+}
+.projects__paragraph {
+  word-spacing: 1.5rem;
+}
+
+.skills__item {
+  display: inline-block;
+  width: 35rem;
+  padding: 2rem 0 3rem;
+}
+.skills__item > *:first-child {
+  padding-bottom: 1.5rem;
+}
+
+.main-content {
+  padding: 0 17.5rem;
+}
+
+.section-introduction {
+  height: 87vh;
+  border-bottom: 0.5px solid #ffffff;
+  position: relative;
+}
+
+.section-skills {
+  padding: 6rem 0;
+  position: relative;
+}
+
+.section-projects {
+  padding: 6rem 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,79 @@
+/* Set up Roboto for old browsers, only regular + bold */
+@supports not (font-variation-settings: normal) {
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('../css/fonts/static/SpaceGrotesk-Medium.ttf') format('ttf');
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('../css/fonts/static/SpaceGrotesk-Bold.ttf') format('ttf');
+    font-weight: bold;
+  }
+}
+
+/* Set up Roboto for modern browsers, all weights */
+@supports (font-variation-settings: normal) {
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('../css/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('ttf supports variations'),
+    url('../css/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('ttf-variations');
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+  }
+}
+
+
+body {
+  font-family: 'Space Grotesk', serif;
+  font-weight: 400;
+  background-color: $color-black;
+  color: $color-white;
+}
+
+.heading {
+  font-weight: 700;
+
+
+  &--level-1 {
+    font-size: 8.8rem;
+    line-height: 8.8rem;
+    letter-spacing: -.4rem;
+  }
+
+  &--level-2 {
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+    letter-spacing: -1.5px;
+  }
+
+  &--level-3 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+
+  &--logo {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+  }
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+.underline-decor {
+  background-image: linear-gradient($color-green 100%, $color-green 100%);
+  background-repeat: repeat-x;
+  background-position: 0 95%;
+  background-size: 100% 7px;
+}
+
+.logo:link,
+.logo:visited {
+  color: inherit;
+  text-decoration: none;
+}
+

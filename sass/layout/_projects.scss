@@ -1,0 +1,36 @@
+.projects {
+
+  text-transform: uppercase;
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    max-width: 52rem;
+    padding-bottom: 6rem;
+
+    &-heading {
+      padding: 1rem 0;
+    }
+
+    &:not(even) {
+      margin-left: 2rem;
+    }
+
+    & > img {
+      width: 100%;
+    }
+  }
+
+  &__paragraph {
+    word-spacing: 1.5rem;
+  }
+}

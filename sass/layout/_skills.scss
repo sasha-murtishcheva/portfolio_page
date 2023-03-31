@@ -1,0 +1,9 @@
+.skills__item {
+  display: inline-block;
+  width: 35rem;
+  padding: 2rem 0 3rem;
+
+  & > *:first-child {
+    padding-bottom: 1.5rem;
+  }
+}

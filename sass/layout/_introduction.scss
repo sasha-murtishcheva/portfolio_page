@@ -1,0 +1,28 @@
+.introduction {
+
+  &__picture {
+    width: 44.5rem;
+    height: 72rem;
+
+    background-image: url("../images/image-profile-desktop.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    margin-top: -10.2rem;
+  }
+
+  &__content {
+    max-width: 70rem;
+    padding-top: 7rem;
+
+    & > *:not(:first-child) {
+      width: 60%;
+    }
+  }
+
+}

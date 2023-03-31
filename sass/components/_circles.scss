@@ -1,0 +1,27 @@
+.circles {
+  position: absolute;
+
+  &--picture {
+    bottom: 7rem;
+    left: -6.5rem;
+  }
+
+  &--left-top {
+    top: 0;
+    left: -28.5rem;
+  }
+
+  &--right {
+    bottom: 2rem;
+    right: -17.5rem;
+
+    & > img {
+      object-position: 20rem;
+    }
+  }
+
+  &--left-bottom {
+    top: 32rem;
+    left: -25rem;
+  }
+}

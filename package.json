@@ -1,0 +1,24 @@
+{
+  "name": "portfolio_page",
+  "version": "1.0.0",
+  "description": "This is my solution for Frontend Mentor challenge. - [Link of the challenge.](https://www.frontendmentor.io/challenges/singlepage-developer-portfolio-bBVj2ZPi-x) - [Link to my profile with other projects.](https://www.frontendmentor.io/profile/alexandramurtischeva)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass sass/main.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sasha-murtishcheva/portfolio_page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sasha-murtishcheva/portfolio_page/issues"
+  },
+  "homepage": "https://github.com/sasha-murtishcheva/portfolio_page#readme",
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.60.0"
+  }
+}
